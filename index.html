@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>HTML Base</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <div class="column-container">
+        <div class="container" id="paste-script">
+            <div>
+                <h1>Paste Script Here</h1>
+                <textarea id='play-script'>
+ANASTASIA
+Is this the class for writing musicals?
+CHRISTINE
+What? No – this is the playwriting seminar.
+ANASTASIA
+That’s it.
+CHRISTINE
+Oh, I’m sorry, I thought you said musicals.
+ANASTASIA
+Didn’t you get the email?
+(At this moment, the teacher, Perry, arrives, followed
+immediately by Helen. Perry conducts the class standing –
+he is very animated.)
+PERRY
+Hello, class. By way of introduction, I’d like to go around the room. Each of you should
+introduce yourselves and give a short synopsis of the piece you are writing.
+(He nods to Helen, who is still getting settled.)
+PERRY
+Me? Oh, okay. Well, I’m Helen. I’m an accountant. I took a course on accounting
+ethics last year, and one of the case studies was just fascinating, I thought it would make
+a great play. It’s about the use of stock options in CEO compensation.
+(Perry nods to Christine next.)
+CHRISTINE
+I am Christine. I am a Professor of History at the University, where I specialize in the
+History of Anthropology. My play is a one-woman show about an anthropologist who is
+in her eighteenth month observing apes in the African jungle without any human contact.
+It takes place entirely inside her tent, and mostly inside her head.
+PERRY
+Okay.
+            </textarea>
+            </div>
+        </div>
+        <div class="container" id="paste-charater">
+            <div id="characters">
+                <h1>Add Caracters here</h1>
+                <span>
+                    <input value="ANASTASIA" type="text" name="character1" id="character1">
+                    <input type="checkbox" name="checkbox1" id="checkbox1">Test lines with this character
+                </span>
+                <span>
+                    <input value="CHRISTINE" type="text" name="character2" id="character2">
+                    <input type="checkbox" name="checkbox2" id="checkbox2">Test lines with this character
+                </span>
+                <span>
+                    <input value="PERRY" type="text" name="character3" id="character3">
+                    <input type="checkbox" name="checkbox3" id="checkbox3">Test lines with this character
+                </span>
+                <span>
+                    <input type="text" name="character4" id="character4">
+                    <input type="checkbox" name="checkbox4" id="checkbox4">Test lines with this character
+                </span>
+            </div>
+
+
+            <button id="submitScript">Submit</button>
+        </div>
+
+        <div class="answer">
+        </div>
+        <div class="disapear">
+            <button id="show">Show</button>
+            <button id="next">Next</button>
+        </div>
+    </div>
+    <!-- <div class="voiceinator">
+
+        <h1>Script Parser</h1>
+
+        <select name="voice" id="voices">
+            <option value="">Select A Voice</option>
+        </select>
+
+        <label for="rate">Rate:</label>
+        <input name="rate" type="range" min="0" max="3" value="1" step="0.1">
+
+        <label for="pitch">Pitch:</label>
+
+        <input name="pitch" type="range" min="0" max="2" step="0.1">
+        <textarea name="text">Hello! I love JavaScript 👍</textarea>
+        <button id="stop">Stop!</button>
+        <button id="speak">Speak</button>
+
+    </div> -->
+    <script src="./playParse.js"></script>
+</body>
+
+</html>
